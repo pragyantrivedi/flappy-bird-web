@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="startScreen" class="screen">
+            <h1>Flappy Bird</h1>
+            <p class="mobile-instruction">Tap to start</p>
+            <p class="desktop-instruction">Press SPACE or Click to start</p>
+            <p class="mobile-instruction">Tap to flap</p>
+            <p class="desktop-instruction">Press SPACE or Click to flap</p>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>Game Over</h1>
+            <p>Score: <span id="finalScore">0</span></p>
+            <p>Best: <span id="bestScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        <div id="scoreDisplay">
+            <span id="currentScore">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
